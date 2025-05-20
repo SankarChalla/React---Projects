@@ -1,5 +1,5 @@
 import React from 'react'
-import HiddenSearchBar from './components/HiddenSearchBar'
+import Testamonails from './components/Testamonails'
 
 const App = () => {
   return (
@@ -8,7 +8,8 @@ const App = () => {
     // <Meals />
     // <Calculator />
     // <ToggleBackGroundColor />
-    <HiddenSearchBar />
+    // <HiddenSearchBar />
+    <Testamonails />
   )
 }
 
