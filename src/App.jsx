@@ -1,5 +1,4 @@
-import AccordionData from './utils/content.jsx'
-import Accordion from './components/Accordion'
+import Form from "./components/Form.jsx"
 
 const App = () => {
   return (
@@ -10,13 +9,14 @@ const App = () => {
     // <ToggleBackGroundColor />
     // <HiddenSearchBar />
     // <Testamonails />
-    <div>
-      <div className="accordion">
-        {AccordionData.map(({ title, content }) => (
-          <Accordion title={title} content={content}/>
-        ))}
-      </div>
-    </div>
+    // <div>
+    //   <div className="accordion">
+    //     {AccordionData.map(({ title, content }) => (
+    //       <Accordion title={title} content={content}/>
+    //     ))}
+    //   </div>
+    // </div>
+    <Form />
   )
 }
 
