@@ -1,12 +1,13 @@
 import React from 'react'
-import Calculator from './components/Calculator'
+import ToggleBackGroundColor from './components/ToggleBackGroundColor'
 
 const App = () => {
   return (
     // <Counter />
     // <Todo />
     // <Meals />
-    <Calculator />
+    // <Calculator />
+    <ToggleBackGroundColor />
   )
 }
 
