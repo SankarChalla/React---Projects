@@ -1,5 +1,5 @@
-import React from 'react'
-import Testamonails from './components/Testamonails'
+import AccordionData from './utils/content.jsx'
+import Accordion from './components/Accordion'
 
 const App = () => {
   return (
@@ -9,7 +9,14 @@ const App = () => {
     // <Calculator />
     // <ToggleBackGroundColor />
     // <HiddenSearchBar />
-    <Testamonails />
+    // <Testamonails />
+    <div>
+      <div className="accordion">
+        {AccordionData.map(({ title, content }) => (
+          <Accordion title={title} content={content}/>
+        ))}
+      </div>
+    </div>
   )
 }
 
