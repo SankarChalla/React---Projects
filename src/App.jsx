@@ -1,5 +1,5 @@
 import React from 'react'
-import ToggleBackGroundColor from './components/ToggleBackGroundColor'
+import HiddenSearchBar from './components/HiddenSearchBar'
 
 const App = () => {
   return (
@@ -7,7 +7,8 @@ const App = () => {
     // <Todo />
     // <Meals />
     // <Calculator />
-    <ToggleBackGroundColor />
+    // <ToggleBackGroundColor />
+    <HiddenSearchBar />
   )
 }
 
