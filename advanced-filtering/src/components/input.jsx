@@ -1,14 +1,15 @@
 import React from 'react'
+import { TbBackground } from 'react-icons/tb'
 
-const input = () => {
+const Input = ({handleChange,value,title,name,color}) => {
   return (
     <div>
       <label className="sidebar-label-container">
-          <input type="radio" name="test"/>
-          <span className="checkmark"></span>All
+          <input onChange={handleChange} type="radio" value={value} name={name}/>
+          <span className="checkmark" style={{BackgroundColor:color}}></span>{title}
         </label>
     </div>
   )
 }
 
-export default input
+export default Input
