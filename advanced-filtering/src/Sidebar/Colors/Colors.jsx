@@ -52,7 +52,7 @@ const Colors = ({ handleChange }) => {
         />
         <span
         className="checkmark"
-        style={{background:"white", border:"2px solid black",color:"black"}} />White
+        style={{background:"white", border:"1px solid gray",color:"black"}} />White
       </label>
     </div>
   );

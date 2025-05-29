@@ -6,7 +6,7 @@ import Card from "./components/Card";
 import { useState } from "react";
 
 //Database
-import products from "./db/data.jsx";
+import products from "./db/data.js";
 import Category from "./Sidebar/Category/Category";
 
 function App() {
@@ -28,12 +28,12 @@ function App() {
   // Radio Filters
   const handleChange = (e) => {
     setSelectedCategory(e.target.value);
-
+    };
     //  Buttons Filter
     const handleClick = (e) => {
       setSelectedCategory(e.target.value);
     };
-  };
+
 
   function filteredData(products, selected, query) {
     let filteredProducts = products;
@@ -74,9 +74,9 @@ function App() {
   return (
     <>
       <Sidebar handleChange={handleChange} />
-      <Nav />
-      <Recommended />
-      <Products />
+      <Nav query={query} handleInputChange={handleInputChange} />
+      <Recommended handleClick={handleClick} />
+      <Products result={result} />
     </>
   );
 }
