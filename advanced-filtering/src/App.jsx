@@ -21,8 +21,7 @@ function App() {
 
   const filteredItems = products.filter(
     (product) =>
-      product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !==
-      -1
+      product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
   // Radio Filters
